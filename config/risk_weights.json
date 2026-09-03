@@ -1,0 +1,8 @@
+{
+  "financial": 25,
+  "compliance": 20,
+  "anomaly": 15,
+  "duplicate": 20,
+  "spatial": 10,
+  "context": 10
+}
