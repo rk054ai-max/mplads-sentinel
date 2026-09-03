@@ -1,6 +1,27 @@
 {
   "version": "0.1.0",
   "rules": [],
+  "compliance": {
+    "recommendation_to_sanction": {
+      "threshold_days": 30,
+      "severity": "medium",
+      "score": 25
+    },
+    "sanction_to_payment": {
+      "threshold_days": 90,
+      "severity": "medium",
+      "score": 30
+    },
+    "sanction_to_completion": {
+      "threshold_days": 365,
+      "severity": "medium",
+      "score": 30
+    },
+    "impossible_date_sequence": {
+      "severity": "high",
+      "score": 100
+    }
+  },
   "scoring": {
     "anomaly_weight": 0.4,
     "similarity_weight": 0.3,
