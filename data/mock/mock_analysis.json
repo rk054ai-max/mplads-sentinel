@@ -1,0 +1,47 @@
+[
+  {
+    "work_id": "MPLADS-MOCK-001",
+    "risk_score": 12.5,
+    "risk_level": "LOW",
+    "components": {
+      "financial": {"score": 10, "evidence": ["expenditure matches sanctioned amount"]},
+      "compliance": {"score": 15, "evidence": ["dates and approvals present"]},
+      "anomaly": {"score": 5, "evidence": ["no ML anomalies detected"]},
+      "duplicate": {"score": 0, "evidence": []},
+      "spatial": {"score": 20, "evidence": ["location matches constituency"]},
+      "context": {"score": 5, "evidence": []}
+    },
+    "recommendations": ["No immediate action required. Monitor expenditure."],
+    "ai_summary": "Low risk: records and financials are consistent. No anomalies found."
+  },
+  {
+    "work_id": "MPLADS-MOCK-002",
+    "risk_score": 82.3,
+    "risk_level": "HIGH",
+    "components": {
+      "financial": {"score": 75, "evidence": ["large funds disbursed with low progress"]},
+      "compliance": {"score": 90, "evidence": ["missing sanction paperwork"]},
+      "anomaly": {"score": 80, "evidence": ["ML anomaly: suspicious expenditure patterns"]},
+      "duplicate": {"score": 0, "evidence": []},
+      "spatial": {"score": 20, "evidence": ["coordinates inconsistent with district"]},
+      "context": {"score": 50, "evidence": ["similar recent works nearby"]}
+    },
+    "recommendations": ["Initiate financial audit", "Request missing paperwork"],
+    "ai_summary": "High risk: missing paperwork and anomalous spending suggest investigation."
+  },
+  {
+    "work_id": "MPLADS-MOCK-003",
+    "risk_score": 47.0,
+    "risk_level": "MEDIUM",
+    "components": {
+      "financial": {"score": 50, "evidence": ["expenditure looks inflated"]},
+      "compliance": {"score": 30, "evidence": ["approval dates present"]},
+      "anomaly": {"score": 60, "evidence": ["ML flagged unusual supplier"]},
+      "duplicate": {"score": 0, "evidence": []},
+      "spatial": {"score": 10, "evidence": []},
+      "context": {"score": 40, "evidence": ["nearby projects may duplicate scope"]}
+    },
+    "recommendations": ["Verify supplier contracts", "Validate expenditures with invoices"],
+    "ai_summary": "Medium risk: some anomalies in suppliers and inflated costs; needs targeted verification."
+  }
+]
